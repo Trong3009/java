@@ -25,6 +25,11 @@
             <artifactId>dagger</artifactId>
             <version>2.48</version>
         </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+            <version>4.5.1</version>
+        </dependency>
 
         <!-- Dagger Compiler -->
         <dependency>
@@ -39,6 +44,7 @@
             <id>vertx-repo</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
+
     </repositories>
     <build>
         <plugins>
@@ -55,6 +61,7 @@
                             <groupId>com.google.dagger</groupId>
                             <artifactId>dagger-compiler</artifactId>
                             <version>2.48</version>
+                            <scope>provided</scope>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
